@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         try {
 
-            PatientRecord pr = new PatientRecord();
+            PatientRecord patientRecord = new PatientRecord();
         } catch (SQLException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
