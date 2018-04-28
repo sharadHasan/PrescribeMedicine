@@ -17,10 +17,15 @@ public class PatientRecord extends javax.swing.JFrame {
     
     public PatientRecord() throws SQLException {
         initComponents();
-        myDB = new DBConnection();
-        PreparedStatement ps = myDB.connection.prepareStatement("select * from patient");
-        rs = ps.executeQuery();
-        jTable1.setModel(DbUtils.resultSetToTableModel(rs));
+        try{
+            myDB = new DBConnection();
+            PreparedStatement ps = myDB.connection.prepareStatement("select * from patient");
+            rs = ps.executeQuery();
+            jTable1.setModel(DbUtils.resultSetToTableModel(rs)); 
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+        
         this.setVisible(true);
         
     }
