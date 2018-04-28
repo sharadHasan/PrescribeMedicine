@@ -7,9 +7,6 @@ import java.sql.SQLException;
 public class Prescription extends javax.swing.JFrame {
 
     ResultSet rs = null;
-    public Prescription() {
-        initComponents();
-    }
     
     public Prescription(int id) {
         initComponents();
