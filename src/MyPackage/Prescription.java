@@ -27,8 +27,8 @@ public class Prescription extends javax.swing.JFrame {
                 jLabel8.setText(rs.getString("medicine2"));
                 jLabel9.setText(rs.getString("dose2"));
             }
-        } catch (SQLException ex) {
-            Logger.getLogger(Prescription.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
         this.setVisible(true);
     }
