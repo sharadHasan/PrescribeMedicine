@@ -9,11 +9,6 @@ import java.util.logging.Logger;
 public class Prescription extends javax.swing.JFrame {
 
     ResultSet rs = null;
-    String pn;
-    String m1;
-    String m2;
-    String d1;
-    String d2;
     public Prescription() {
         initComponents();
     }
