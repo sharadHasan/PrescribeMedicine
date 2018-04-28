@@ -10,8 +10,8 @@ public class Main {
         try {
 
             PatientRecord patientRecord = new PatientRecord();
-        } catch (SQLException ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
     }
 
